@@ -22,6 +22,11 @@ import Vue3Tinymce from '../../packages/Vue3Tinymce';
 
 const stateDefault = reactive({
   content: 'tinymce 默认的编辑器设置，不需要传参额外的setting ...',
+  setting: {
+    // 设置中文语言
+    language: 'zh_CN',
+    language_url: '/tinymce/langs/zh_CN.js',
+  }
 });
 
 const stateClassic = reactive({
@@ -39,10 +44,10 @@ const stateClassic = reactive({
     default_link_target: '_blank',
     link_title: false,
     nonbreaking_force_tab: true,
+    content_style: 'body{font-size: 14px}',
     // 设置中文语言
     language: 'zh_CN',
     language_url: '/tinymce/langs/zh_CN.js',
-    content_style: 'body{font-size: 14px}',
   },
 });
 
@@ -62,6 +67,9 @@ const stateJuejin = reactive({
     custom_images_upload_callback: (res) => res.url,
     custom_images_upload_header: { 'X-Token': 'xxxx' },
     custom_images_upload_param: { id: 'xxxx01', age: 18 },
+    // 设置中文语言
+    language: 'zh_CN',
+    language_url: '/tinymce/langs/zh_CN.js',
   },
 });
 </script>

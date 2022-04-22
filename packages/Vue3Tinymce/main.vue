@@ -150,7 +150,8 @@ onMounted(() => {
 
   const scriptSrc =
     props.scriptSrc ??
-    'https://cdn.bootcdn.net/ajax/libs/tinymce/5.8.2/tinymce.min.js';
+    './tinymce/tinymce.min.js';
+    // 'https://cdn.bootcdn.net/ajax/libs/tinymce/5.8.2/tinymce.min.js';
   scriptLoader.load(scriptSrc, initEditor);
 });
 
